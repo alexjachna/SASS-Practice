@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+@mixin displayFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin newPage($theme: $primary-color) {
+    width: 100%;
+    height: 100vh;
+    background-color: $theme;
+}
+
+#landing-page {
+    @include newPage($bg-color-1);
+    @include displayFlex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#container {
+    background-color: $secondary-color;
+    width: 600px;
+    height: 400px;
+    
+    @include displayFlex;
+
+    p {
+        color: $primary-color;
+        font-size: 2rem;
+    }
+}
