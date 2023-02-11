@@ -1,0 +1,41 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+#nav-bar {
+    background-color: $light-blue;
+    width: 100%;
+    @include displayFlex(space-around);
+    padding: 40px 40px;
+    
+    p {
+        color: $white;
+        font-size: 3rem;
+        padding-left: 5px;
+        cursor: pointer;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 30px;
+    }
+
+    a {
+        color: $white;
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        color: $dark-blue;
+        font-weight: bold;
+    }
+}

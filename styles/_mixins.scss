@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+@mixin displayFlex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin newPage($width: 100%, $height: 100vh, $theme: $white) {
+    width: $width;
+    height: $height;
+    background-color: $theme;
+}

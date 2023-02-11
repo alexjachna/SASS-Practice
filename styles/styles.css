@@ -7,12 +7,12 @@
 }
 
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% "Montserrat", sans-serif;
 }
 
 #landing-page {
   width: 100%;
-  height: 100vh;
+  height: 85.8vh;
   background-color: #212644;
   display: flex;
   justify-content: center;
@@ -21,17 +21,77 @@ body {
   text-align: center;
 }
 
-#container {
-  background-color: #576be0;
-  width: 600px;
-  height: 400px;
+#main-container {
+  background-color: #212644;
+  width: 80%;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#container p {
+#main-container img {
+  height: 500px;
+}
+
+#main-container-right {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+#main-container-right h1 {
+  color: white;
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+#main-container-right span {
+  background: linear-gradient(90deg, #ff03e2, #ff00bf, #ff2e9f, #ff5285, #ff7072, #ff8a66, #ffa164, #ffb56b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#main-container-right p {
   color: #fff;
   font-size: 2rem;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#nav-bar {
+  background-color: #576be0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 40px;
+}
+#nav-bar p {
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 5px;
+  cursor: pointer;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#nav-bar ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+#nav-bar li {
+  display: inline-block;
+  padding: 0 30px;
+}
+#nav-bar a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+#nav-bar a:hover {
+  color: #212644;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
